@@ -5,6 +5,7 @@
 int enterYear = 0;
 int palindromeNum = 0;
 int primeNum = 0;
+int binary = 0;
 
 int main()
 {
@@ -43,6 +44,16 @@ int main()
 	{
 		std::cout << primeNum << " is not a prime numeber\n";
 	}
+
+
+	std::cout << "Enter a binary number\n";
+	std::cin >> binary;
+
+	std::cout << "Decimal value is: " << binaryToDecimal(binary) << "\n";
+	
+
+	
+
 
 
 	system("Pause");

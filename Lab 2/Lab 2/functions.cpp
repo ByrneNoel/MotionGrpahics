@@ -69,3 +69,20 @@ bool isAPrimeNumber(int primeNum)
 	
 
 }
+
+int binaryToDecimal(int binaryNum)
+{
+	int decimal = 0;
+	int power = 1;
+	
+	while (binaryNum > 0)
+	{
+		int digit = binaryNum % 10;
+		decimal += digit * power;
+		power = power * 2;
+		binaryNum /= 10;
+	}
+
+
+	return decimal;
+}
